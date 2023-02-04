@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photobooth</title>
+    <link rel="stylesheet" type="text/css" href="styles.css?version=5" />
+    <link rel="shortcut icon" type="image/png" href="src/resize.png" />
+
+    <title>Photo booth</title>
+  </head>
+  <body>
+    <div class="photobooth-container">
+      <!-- Home button -->
+      <div class="home_button">
+        <div class="home-btn-container">
+          <!-- <a href="virtual.html" id="home_button-virtual">
+        <img
+          src="/src/home-page1.png"
+          alt="Home"
+          style="background-color: #afafaf; border-radius: 5px"
+        />
+      </a> -->
+          <button id="home_button-virtual">
+            <a href="virtual.html" style="text-decoration: none">Back</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Photo Booth -->
+      <div class="video-container">
+        <div class="live-video">
+          <video autoplay></video>
+          <p id="prompt1">Please Capture Video To Get Started</p>
+        </div>
+
+        <div class="imgContainer">
+          <p id="prompt2">Click 'Screenshot' to take a picture.</p>
+          <!-- <img id="image_result" /> -->
+          <img
+            src=""
+            alt="image-result"
+            id="image-result"
+            style="max-width: 300px"
+          />
+        </div>
+      </div>
+      <div class="photobooth-btn">
+        <!-- <h3>Screenshotter</h3> -->
+        <button class="capture">Capture video</button>
+        <button id="screenshot" disabled>Screenshot</button>
+        <button class="download" disabled>Download</button>
+        <label for="select"> Format </label>
+        <select id="select" onchange="onFormatChange()">
+          <option value=".png">PNG</option>
+          <option value=".jpeg">JPEG</option>
+          <option value=".jpg">JPG</option>
+          <option value=".tiff">TIFF</option>
+        </select>
+        <button id="clear" onclick="clearAll()" disabled>Clear All</button>
+      </div>
+    </div>
+
+    <script src="video.js"></script>
+  </body>
+</html>

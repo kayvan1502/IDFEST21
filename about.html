@@ -1,85 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/png" href="src/resize.png">
-</head>
+    <link rel="stylesheet" type="text/css" href="styles.css?version=6" />
+    <link rel="shortcut icon" type="image/png" href="src/resize.png" />
+  </head>
 
-<body>
+  <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo"><img src="src/resize.png" alt="IDFEST2021">IDFEST21</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span><span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="about.html" class="navbar__links" id="about-page">About</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#highlight" class="navbar__links" id="highlight-page">Highlight</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="#gallery" class="navbar__links" id="gallery-page">Gallery</a>
-                </li>
-            </ul>
+      <div class="navbar__container">
+        <a href="index.html" id="navbar__logo"
+          ><img src="src/resize.png" alt="IDFEST2021" />IDFEST21</a
+        >
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span><span class="bar"></span>
+          <span class="bar"></span>
         </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="highlight.html" class="navbar__links" id="highlight-page"
+              >Highlight</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a href="sponsor.html" class="navbar__links" id="merchandise-page"
+              >Merchandise</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- About Us Section -->
     <div class="aboutus" id="aboutus">
-        <div class="grid__container">
-            <div class="grid-item grid-item-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim lorem, tempor in
-                    ultrices at, interdum ut augue. Fusce semper cursus tortor at rutrum. Ut magna erat, aliquet nec
-                    fringilla quis, pretium non neque</p>
-            </div>
-            <div class="grid-item grid-item-2">2</div>
-            <div class="grid-item grid-item-3">3</div>
-            <div class="grid-item grid-item-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse enim lorem, tempor in
-                    ultrices at, interdum ut augue. Fusce semper cursus tortor at rutrum. Ut magna erat, aliquet nec
-                    fringilla quis, pretium non neque</p>
-            </div>
+      <div class="grid__container">
+        <div class="grid-item grid-item-1">
+          <p>
+            This year IDFest is expanding its scope to include online
+            competition along with the previously known event - KASTARA.
+            IDFest'21 will include two (2) new categories to compete in. In
+            addition to the competition in Mobile Legends, this year the
+            committee presents a Minecraft building competition as well as a
+            photography competition.
+          </p>
         </div>
+        <div class="grid-item grid-item-2">
+          <img
+            src="/src/2.jpg.JPG"
+            alt="Tari Saman"
+            style="border-radius: 8px"
+          />
+        </div>
+        <div class="grid-item grid-item-3">
+          <img src="/src/3.JPG" alt="IDFest2019" style="border-radius: 8px" />
+        </div>
+        <div class="grid-item grid-item-4">
+          <p>
+            Both categories were added in line with our goal to peak interest to
+            even younger audiences regarding cultural preservation and their
+            role to take active part in their community. The competitions will
+            be closed with a main event day, consisting of a Webinar, Workshop,
+            as well as live broadcast with special music performances. These
+            events will be inspired by Indonesia's 80s pop culture, which we
+            hope will help reintroduce the era to the newer generation today.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Image Roll Section -->
     <div class="imageroll" id="imageroll">
-        <div class="imageroll__container">
-            <div class="imageroll_wrapper">
-                <h1>Check out our past event</h1>
-            </div>
+      <div class="imageroll__container">
+        <div class="imageroll_wrapper">
+          <h1>Check out our past event</h1>
         </div>
+        <div class="slider">
+          <div class="slides">
+            <!-- radio button -->
+            <input type="radio" name="radio-button" id="radio1" />
+            <input type="radio" name="radio-button" id="radio2" />
+            <input type="radio" name="radio-button" id="radio3" />
+            <input type="radio" name="radio-button" id="radio4" />
+
+            <!-- slide image -->
+            <div class="slide first">
+              <img src="/src/5.JPG" alt="5" style="width: 800px; height: 500px;"/>
+            </div>
+            <div class="slide">
+              <img src="/src/6.JPG" alt="6" style="width: 800px; height: 500px;"/>
+            </div>
+            <div class="slide">
+              <img src="/src/7.JPG" alt="7" style="width: 800px; height: 500px;"/>
+            </div>
+            <div class="slide">
+              <img src="/src/8.JPG" alt="8" style="width: 800px; height: 500px;"/>
+            </div>
+
+            <!-- automation -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+          </div>
+
+          <!-- Manual navigation-->
+          <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer Section -->
     <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__links--wrapper">
-                <div class="footer__links--items">
-                    <h2>Contact Us</h2>
-                    <p>Media Partner: +60179309978 (Miranda)</p>
-                    <p>Sponsorship: +628111918071 (Aurel)</p>
-                </div>
-                <div class="footnote">
-                    <p>IDFEST2021</p>
-                </div>
-            </div>
+      <div class="footer__links">
+        <div class="footer__links--wrapper">
+          <div class="footer__links--items">
+            <h2>Contact Us</h2>
+            <p>Media Partner: +60179309978 (Miranda)</p>
+            <p>Sponsorship: +628111918071 (Aurel)</p>
+          </div>
+          <div class="footnote">
+            <p>IDFEST2021</p>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
